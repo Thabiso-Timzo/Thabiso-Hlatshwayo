@@ -10,7 +10,6 @@ import {
   AiFillMail
 } from 'react-icons/ai'
 
-// 42:09
 const NavBar = () => {
   const [nav, setNav] = useState(false)
 
@@ -52,7 +51,7 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className={nav ? 'fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
+      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div className={
           nav 
           ? 'fixed left-0 w-[75%] sm:[60%] md:w-[45%] h-screen bg-red-500 p-10 ease-in duration-500' 
@@ -72,7 +71,7 @@ const NavBar = () => {
               </div>
               </div>
               <div className={'border-b border-grey-300 my-4'}>
-                <p className={'w-[85%] md:w-[90%] py-4'}>Developer</p>
+                <p className={'w-[85%] md:w-[90%] py-4'}>Dreams and teams work together.</p>
               </div>
             </div>
             <div className={'py-4 flex flex-col'}>
