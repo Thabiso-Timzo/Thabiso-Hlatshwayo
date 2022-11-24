@@ -20,7 +20,7 @@ const Main = () => {
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
                 <p className={'py-4 text-gray-200 max-w-[70%] m-auto'}>
-                    I'm a developer creating awesome and effective projects for companies. 
+                    I am a developer creating awesome and effective projects for companies. 
                     start scrolling and learn more about me.
                 </p>
                 <div className={'flex items-center justify-between max-w-[330px] m-auto py-4'}>
