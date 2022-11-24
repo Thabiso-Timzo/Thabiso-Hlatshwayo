@@ -10,6 +10,8 @@ import {
   AiFillMail
 } from 'react-icons/ai'
 
+import logo from '../../public/assets/logo/logo.png'
+
 const NavBar = () => {
   const [nav, setNav] = useState(false)
 
@@ -23,7 +25,7 @@ const NavBar = () => {
       <div 
         className={'flex justify-between items-center w-full h-full px-2 2xl:px-16'}>
         <Image 
-          src={'/../public/assets/logo/logo.png'} 
+          src={logo} 
           alt='' 
           width={'125'} 
           height={'50'}
