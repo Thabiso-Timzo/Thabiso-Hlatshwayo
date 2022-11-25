@@ -25,7 +25,7 @@ const Skills = () => {
       <div className={'max-w-[1240px] flex flex-col justify-center h-full'}>
         <p className={'text-xl tracking-widest uppercase text-[#D4AF37]'}>Skills</p>
         <h2 className={'py-4'}>What I can do</h2>
-        <div className={'grid md:grid-cols-2 lg:grid-cols-4 gap-8'}>
+        <div className={'grid md:grid-cols-2 lg:grid-cols-6 gap-8'}>
           <HTML />
           <CSS />
           <JavaScript />
