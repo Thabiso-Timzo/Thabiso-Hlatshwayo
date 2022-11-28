@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { 
   AiOutlineClose, 
   AiOutlineMenu, 
@@ -15,6 +16,27 @@ import logo from '../../public/assets/logo/logo.png'
 const NavBar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navBg, setNavBg] = useState('#ecf0f3')
+  const [linkColor, setLinkColor] = useState('#1f2937')
+  const router = useRouter()
+
+  useEffect(() => {
+    if (
+      router.asPath === '/projects/contacts' || 
+      router.asPath === '/projects/fyur' || 
+      router.asPath === '/projects/gude' || 
+      router.asPath === '/projects/movie' || 
+      router.asPath === '/projects/smt' ||
+      router.asPath === '/projects/thabiso' ||
+      router.asPath === '/projects/trivia'
+      ) {
+        setNavBg('transparent')
+        setLinkColor('#fff')
+    } else {
+      setNavBg('#3f51b5')
+      setLinkColor('#fff')
+    }
+  },[router])
 
   const handleNav = () => {
     setNav(!nav)
@@ -33,6 +55,7 @@ const NavBar = () => {
 
   return (
     <div 
+      style={{backgroundColor: `${navBg}`}}
       className={shadow ? 'fixed w-full h-[60px] shadow-xl z-[100]' : 'fixed w-full h-[60px] z-[100]'}> 
       <div 
         className={'flex justify-between items-center w-full h-full px-2 2xl:px-16'}>
@@ -45,7 +68,7 @@ const NavBar = () => {
           />
         </Link>
         <div>
-          <ul className={'hidden md:flex'}>
+          <ul style={{color: `${linkColor}`}} className={'hidden md:flex'}>
             <Link href={'/'}>
               <li className={'ml-10 text-sm uppercase hover:border-b'}>Home</li>
             </Link>
@@ -95,19 +118,19 @@ const NavBar = () => {
             <div className={'py-4 flex flex-col'}>
               <ul className='uppercase'>
                 <Link href={'/'}>
-                  <li className={'py-4 text-sm'}>Home</li>
+                  <li onClick={() => setNav(false)} className={'py-4 text-sm'}>Home</li>
                 </Link>
-                <Link href={'/'}>
-                  <li className={'py-4 text-sm'}>About</li>
+                <Link href={'/about'}>
+                  <li onClick={() => setNav(false)} className={'py-4 text-sm'}>About</li>
                 </Link>
-                <Link href={'/'}>
-                  <li className={'py-4 text-sm'}>Skills</li>
+                <Link href={'/skills'}>
+                  <li onClick={() => setNav(false)} className={'py-4 text-sm'}>Skills</li>
                 </Link>
-                <Link href={'/'}>
-                  <li className={'py-4 text-sm'}>Projects</li>
+                <Link href={'/projects'}>
+                  <li onClick={() => setNav(false)} className={'py-4 text-sm'}>Projects</li>
                 </Link>
-                <Link href={'/'}>
-                  <li className={'py-4 text-sm'}>Contact</li>
+                <Link href={'/contact'}>
+                  <li onClick={() => setNav(false)} className={'py-4 text-sm'}>Contact</li>
                 </Link>
               </ul> 
             </div>
