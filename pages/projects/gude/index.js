@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 import NavBar from '../../../components/nav-bar/NavBar'
 import Footer from '../../../components/footer/Footer'
@@ -22,7 +23,7 @@ const gude = () => {
       <NavBar />
       <div className={'w-full'}>
         <div className={'w-screen h-[25vh] lg:h-[40vh relative]'}>
-          <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/70 z-10'}>
+          <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/50 z-10'}>
             <div className={'absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'}>
               <h2 className={'text-[#fff] text-center'}>Gude ecommerce store</h2>
               <div className={'flex justify-center gap-4 mt-5'}>
@@ -37,26 +38,24 @@ const gude = () => {
           </div>
         </div>
         <div className={'h-10'}></div>
-        <div className={'max-w-[1240px mx-auto p-2 grid md:grid-cols-5 gap-10 pt-20'}>
+        <div className={'max-w-[1240px mx-auto p-10 pt-20'}>
           <div className={'col-span-4'}>
             <p>Project</p>
-            <h3>Overview</h3>
-            <h4>Project is on development mode.</h4>
-            <p>
+            <h3 className={'mt-2'}>Overview</h3>
+            <h4 className={'mt-2'}>Project is on development mode.</h4>
+            <p className={'mt-2'}>
               In this project I am using MERN Stack, users able to buy only, an admin and students are the ones who are permitted to 
               sell items. As a student you should be able to register yourself with your tertiary email address. The projects has a chatting 
               page where a user and students can negotiate items prices. The Item can be delivered via the gude transportaion system or a student
               and user can use other delivery options. The payment gateway system the app uses is paypal. 
             </p>
-            <button className={'px-8 py-2 mt-4 mr-8'}>Demo</button>
-            <button className={'px-8 py-2 mt-4'}>Source Code</button>
-          </div>
-          <div className={'col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'}>
-            <div className={'p-2'}>
-              <p>Technologies</p>
-              <div className={''}>
-                <p></p>2:14:17
-              </div>
+            <div className={'mt-10'}>
+              <Link 
+                href={'https://github.com/Thabiso-Timzo/Gude'}
+                className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
+              >
+                Source Code
+              </Link>
             </div>
           </div>
         </div>
