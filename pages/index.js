@@ -6,8 +6,8 @@ import {
     AiFillGithub,
     AiFillMail
 } from 'react-icons/ai'
-import Footer from '../components/footer/Footer'
 
+import Footer from '../components/footer/Footer'
 import NavBar from '../components/nav-bar/NavBar'
 
 export default function Home() {
