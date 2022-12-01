@@ -3,13 +3,10 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
 
 // import reducers
-import {
-  aboutReducer
-} from '../reducers/about-reducer/aboutReducer'
 
 // use reducers in combineReducers
 const reducer = combineReducers({
-  about: aboutReducer
+  
 })
 
 // initial state
