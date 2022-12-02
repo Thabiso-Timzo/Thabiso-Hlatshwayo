@@ -21,6 +21,8 @@ import Tailwind from '../components/tailwind/Tailwind'
 import Amazon from '../components/amazon/Amazon'
 import Docker from '../components/docker/Docker'
 import Footer from '../components/footer/Footer'
+import TypeScript from '../components/typescript/TypeScript'
+import Django from '../components/django/Django'
 
 const skills = () => {
   return (
@@ -40,13 +42,15 @@ const skills = () => {
                     <HTML />
                     <CSS />
                     <JavaScript />
+                    <TypeScript />
                     <Git />
                     <GitHub />
                     <ReactJS />
                     <NextJS />
-                    <Python />
                     <Redux />
+                    <Python />
                     <Flask />
+                    <Django />
                     <NodeJSX />
                     <ExpressJS />
                     <Mongo />
