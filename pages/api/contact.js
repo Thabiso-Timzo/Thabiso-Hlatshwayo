@@ -17,7 +17,7 @@ const generateEmailContent = (data) => {
 
   const htmlData = Object.entries(data).reduce(
     (str, [key, val]) => 
-      (str += `<h1>${CONTACT_MESSAGE_FIELDS[key]}</h1><p>${val}</p>`), 
+      (str += `<h1 style="font-size:20px;">${CONTACT_MESSAGE_FIELDS[key]}</h1><p>${val}</p>`), 
     "")
   
 
