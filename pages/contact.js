@@ -26,13 +26,17 @@ const contact = () => {
     const dispatch = useDispatch()
 
     const send = useSelector((state) => state.email)
-    const { error, loading } = send
+    const { error, success, loading } = send
 
-    useEffect(() => {
-        if (error) {
-            toast.error(error)
-        }
-    },[toast])
+    // useEffect(() => {
+    //     if (error) {
+    //         toast.error(error)
+    //     }
+
+    //     if (success) {
+    //         toast.success("Email sent!!")
+    //     }
+    // },[toast, error, success])
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -44,6 +48,12 @@ const contact = () => {
             return toast.error('Invalid email address.')           
 
         dispatch(emailAction(name, email, subject, message))
+    }
+
+    if (success) {
+        toast.success("Email sent!!")
+    } else {
+        toast.error(error)
     }
 
   return (
@@ -88,7 +98,7 @@ const contact = () => {
                 <div className={'col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'}>
                     {
                         loading ? (
-                            <div className={'flex items-center justify-center'}>
+                            <div className={'flex items-center justify-center mt-40'}>
                                 <Loading />
                             </div>
                         ) : (
@@ -96,7 +106,7 @@ const contact = () => {
                                 <form>
                                     <div className={'grid md:grid-col-4 w-full py-2'}>
                                         <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Name</label>
+                                            <label className={'uppercase text-sm py-2'}>Name*</label>
                                             <input 
                                                 className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
                                                 type='text' 
@@ -107,7 +117,7 @@ const contact = () => {
                                             />
                                         </div>
                                         <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Email</label>
+                                            <label className={'uppercase text-sm py-2'}>Email*</label>
                                             <input 
                                                 className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
                                                 type='text' 
@@ -118,7 +128,7 @@ const contact = () => {
                                             />
                                         </div>
                                         <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Subject</label>
+                                            <label className={'uppercase text-sm py-2'}>Subject*</label>
                                             <input 
                                                 className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
                                                 type='text' 
@@ -129,7 +139,7 @@ const contact = () => {
                                             />
                                         </div>
                                         <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Name</label>
+                                            <label className={'uppercase text-sm py-2'}>Message*</label>
                                             <textarea 
                                                 className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
                                                 type='text' 
