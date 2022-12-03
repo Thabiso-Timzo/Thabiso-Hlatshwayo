@@ -7,11 +7,11 @@ import {
 export const emailReducer = (state = {}, action) => {
   switch (action.type) {
     case EMAIL_REQUEST:
-      return { loading: true }
+      return { loading: true, success: false }
     case EMAIL_SUCCESS:
-      return { loading: false, email: action.payload }
+      return { loading: false, success: true, email: action.payload }
     case EMAIL_FAIL:
-      return { loading: false, error: action.payload }
+      return { loading: false, success: false, error: action.payload }
     default:
       return state
   }
