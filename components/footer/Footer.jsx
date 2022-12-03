@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState} from 'react'
-import { IoIosArrowDropupCircle, IoIosArrowForward  } from 'react-icons/io'
+import { IoIosArrowDropupCircle } from 'react-icons/io'
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   const [toTop, setToTop] = useState(false)
@@ -23,7 +24,8 @@ const Footer = () => {
   }
 
   return (
-    <div className={'mt-10'}>
+    <>
+      <div className={'mt-10'}>
         <div className={'flex justify-center py-12'}>
           {toTop && (
             <div onClick={scrollUp} className={'rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-75'}>
@@ -31,136 +33,82 @@ const Footer = () => {
             </div>
           )}
         </div>
-        <footer className={'bg-gray-900'}>
-         <div className={'p-10 bg-gray-800 text-gray-200 '}>
-          <div className={'max-w-7xl mx-auto'}>
-            <div className={'gid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40 flex justify-center'}>
-              <div className={'mb-5'}>
-                <h5 className='text-2xl pb-4'>Links</h5>
-                <ul>
-                  <li>
-                    <Link href={'/'}>
-                      <div className={'flex'}>
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Home</p>
-                      </div>
-                      </Link>
-                  </li>
-                  <li>
-                    <Link href={'/about'}>
-                      <div className={'flex'}>
-                        <IoIosArrowForward className={'mr-2'} />
-                        <p>About</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/skills'}>
-                      <div className={'flex'}>
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Skills</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Projects</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/contact'}>
-                    <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Contact</p>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className={'mb-5'}>
-                <h5 className='text-2xl pb-4'>Project link</h5>
-                <ul>
-                  <li>
-                    <Link href={'/projects/contacts'}>
-                    <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Contact</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/fyur'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Fyur</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/gude'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Gude</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/movie'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Movie</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/smt'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>SMT</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/thabiso'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Thabiso</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href={'/projects/trivia'}>
-                      <div className={'flex'}>    
-                        <IoIosArrowForward className={'mr-2'}/>
-                        <p>Trivia</p>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className={'mb-5'}>
-                <h5 className='text-2xl pb-4'>My services</h5>
-                <ul>
-                  <li>Software engineering</li>
-                  <li>Full stack development</li>
-                  <li>Front-end development</li>
-                  <li>Back-end development</li>
-                  <li>UX/UI design</li>
-                </ul>
-              </div>
+      </div>
+      <div className={'bg-grey-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20'}>
+        <div className={'p-5'}>
+          <ul>
+            <p className={'text-[#fff] font-bold text-3xl pb-6'}>
+              Thabiso <span className={'text-[#D4AF37]'}>Hlatshwayo</span>
+            </p>
+            <div className={'flex gap-6 pb-5'}>
+              <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><FaInstagram className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
+              <Link href={'https://github.com/Thabiso-Timzo'}><FaGithub className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
+              <Link href={'https://www.linkedin.com/in/thabiso-hlatshwayo-8a4079198/'}><FaLinkedin className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
             </div>
-          </div>
+          </ul>      
         </div>
-        <div className={'w-full bg-black text-white px-10 p-5'}>
-          <div className={'text-center'}>
-            <p>Copyright © {new Date().getFullYear()} Thabiso Hlatshwayo</p>
-          </div>
+        <div className={'p-5'}>
+          <ul>
+            <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>Links</p>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/'}>Home</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/about'}>About</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/skills'}>Skills</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects'}>Projects</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/contacts'}>Contacts</Link>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+        <div className={'p-5'}>
+          <ul>
+            <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>Project links</p>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/gude'}>Gude</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/trivia'}>Trivia</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/contacts'}>Contacts</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/fyur'}>Fyur</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/movie'}>Movie</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/smt'}>Star talent management</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/projects/thabiso'}>Thabiso's profile</Link>
+            </li>
+          </ul>
+        </div>
+        <div className={'p-5'}>
+          <ul>
+            <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>API Documentation</p>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/docs/gude'}>Gude API Documentation</Link>
+            </li>
+            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
+              <Link href={'/docs/trivia'}>Trivia API Documentation</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className={'flex flex-col justify-center items-center text-center p-5 bg-slate-800'}>
+        <p className={'font-bold'}>Copyright © {new Date().getFullYear()} Thabiso Hlatshwayo</p> 
+      </div>
+    </>
   )
 }
 
