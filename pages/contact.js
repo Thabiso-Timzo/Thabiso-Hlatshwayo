@@ -28,15 +28,15 @@ const contact = () => {
     const send = useSelector((state) => state.email)
     const { error, success, loading } = send
 
-    // useEffect(() => {
-    //     if (error) {
-    //         toast.error(error)
-    //     }
+    useEffect(() => {
+        if (error) {
+            toast.error(error)
+        }
 
-    //     if (success) {
-    //         toast.success("Email sent!!")
-    //     }
-    // },[toast, error, success])
+        if (success) {
+            toast.success("Email sent!!")
+        }
+    },[toast, error, success])
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -48,12 +48,6 @@ const contact = () => {
             return toast.error('Invalid email address.')           
 
         dispatch(emailAction(name, email, subject, message))
-    }
-
-    if (success) {
-        toast.success("Email sent!!")
-    } else {
-        toast.error(error)
     }
 
   return (

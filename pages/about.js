@@ -13,8 +13,8 @@ const about = () => {
         <link rel="icon" href="/logo.png" />
       </Head>
     <NavBar />
-    <div className={'h-40'}></div>
-    <div className={'w-full md:h-screen p-2 flex items-center py-16'}>
+    <div className={'h-15'}></div>
+    <div className={'w-full md:h-screen p-10 flex items-center py-16'}>
       <div className={'max-w-[1240] m-auto md:grid grid-cols-3 gap-8'}>
         <div className={'col-span-2'}>
           <h1 className={'uppercase text-3xl tracking-widest text-[#D4AF37] text-center'}>About Thabiso Hlatshwayo</h1>
