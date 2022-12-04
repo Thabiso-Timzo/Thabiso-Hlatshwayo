@@ -4,7 +4,7 @@ import React from 'react'
 import Footer from '../../../components/footer/Footer'
 import NavBar from '../../../components/nav-bar/NavBar'
 
-const movie = () => {
+const index = () => {
   return (
     <div>
         <Head>
@@ -18,4 +18,4 @@ const movie = () => {
   )
 }
 
-export default movie
+export default index
