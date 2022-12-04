@@ -23,6 +23,7 @@ import Docker from '../components/docker/Docker'
 import Footer from '../components/footer/Footer'
 import TypeScript from '../components/typescript/TypeScript'
 import Django from '../components/django/Django'
+import SQLAlchemy from '../components/sqlalchemy/SQLAlchemy'
 
 const skills = () => {
   return (
@@ -51,6 +52,7 @@ const skills = () => {
                     <Python />
                     <Flask />
                     <Django />
+                    <SQLAlchemy />
                     <NodeJSX />
                     <ExpressJS />
                     <Mongo />
