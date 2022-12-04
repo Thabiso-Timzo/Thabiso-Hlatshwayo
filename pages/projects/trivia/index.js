@@ -2,15 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
 
 import NavBar from '../../../components/nav-bar/NavBar'
 import Footer from '../../../components/footer/Footer'
+
 import react from '../../../public/assets/skills/react.png'
-import redux from '../../../public/assets/skills/redux.png'
-import mongo from '../../../public/assets/skills/mongodb.png'
-import express from '../../../public/assets/skills/express.png'
-import css from '../../../public/assets/skills/css.png'
-import node from '../../../public/assets/skills/node.png'
+import flask from '../../../public/assets/skills/flask.png'
+import sqlalchemy from '../../../public/assets/skills/sqlAlchemy.png'
+import postgreSQL from '../../../public/assets/skills/postgresql.png'
+
 
 const index = () => {
   return (
@@ -25,14 +26,17 @@ const index = () => {
         <div className={'w-screen h-[25vh] lg:h-[40vh relative]'}>
           <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/50 z-10'}>
             <div className={'absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'}>
-              <h2 className={'text-[#fff] text-center'}>Gude ecommerce store</h2>
+              <Link href={'/projects'}>
+                <div className={'text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
+                  <BsFillArrowLeftCircleFill />
+                </div>
+              </Link>
+              <h2 className={'text-[#fff] text-center'}>Trivia</h2>
               <div className={'flex justify-center gap-4 mt-5'}>
                 <Image src={react} alt={''} width={'30'} height={'15'}/>
-                <Image src={redux} alt={''} width={'30'} height={'15'}/>
-                <Image src={mongo} alt={''} width={'30'} height={'15'}/>
-                <Image src={express} alt={''} width={'30'} height={'15'}/>
-                <Image src={node} alt={''} width={'30'} height={'15'}/>
-                <Image src={css} alt={''} width={'30'} height={'15'}/>
+                <Image src={flask} alt={''} width={'30'} height={'15'}/>
+                <Image src={sqlalchemy} alt={''} width={'30'} height={'15'}/>
+                <Image src={postgreSQL} alt={''} width={'30'} height={'15'}/>
               </div>
             </div>
           </div>
@@ -42,16 +46,14 @@ const index = () => {
           <div className={'col-span-4'}>
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
-            <h4 className={'mt-2'}>Project is on development mode.</h4>
             <p className={'mt-2'}>
-              In this project I am using MERN Stack, users able to buy only, an admin and students are the ones who are permitted to 
-              sell items. As a student you should be able to register yourself with your tertiary email address. The projects has a chatting 
-              page where a user and students can negotiate items prices. The Item can be delivered via the gude transportaion system or a student
-              and user can use other delivery options. The payment gateway system the app uses is paypal. 
+              A full-stack application built with React, Flask. I used SQLAlchemy as my ORM. 
+              I used PostgresSQL an my database. Its a webpage to manage the trivia app and 
+              play the game,
             </p>
             <div className={'mt-10'}>
               <Link 
-                href={'https://github.com/Thabiso-Timzo/Gude'}
+                href={'https://github.com/Thabiso-Timzo/Trivia'}
                 className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
               >
                 Source Code

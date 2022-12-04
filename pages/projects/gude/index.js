@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
+import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
 
 import NavBar from '../../../components/nav-bar/NavBar'
 import Footer from '../../../components/footer/Footer'
@@ -25,6 +26,11 @@ const index = () => {
         <div className={'w-screen h-[25vh] lg:h-[40vh relative]'}>
           <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/50 z-10'}>
             <div className={'absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'}>
+              <Link href={'/projects'}>
+                <div className={'text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
+                  <BsFillArrowLeftCircleFill />
+                </div>
+              </Link>
               <h2 className={'text-[#fff] text-center'}>Gude ecommerce store</h2>
               <div className={'flex justify-center gap-4 mt-5'}>
                 <Image src={react} alt={''} width={'30'} height={'15'}/>
