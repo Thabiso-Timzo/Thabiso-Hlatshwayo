@@ -30,8 +30,8 @@ const projects = () => {
       <div className={'h-20'}></div>
       <div className={'w-full'}>
         <div className={'max-w-[1240] mx-auto px-2 py-16'}>
-            <p className={'text-xl tracking-widest uppercase text-[#D4AF37]'}>Projects</p>
-            <h2 className={'py-4'}>What I have built</h2>
+            <p className={'text-xl tracking-widest uppercase text-[#D4AF37] text-center font-bold'}>Projects</p>
+            <h2 className={'py-4 text-center'}>What I have built</h2>
             <div className={'grid md:grid-cols-2 gap-8'}>
                 <Gude title="Gude" backgroundImg={gude} projectURL={'/projects/gude'}/>
                 <Trivia title="Trivia" backgroundImg={trivia} projectURL={'/projects/trivia'}/>

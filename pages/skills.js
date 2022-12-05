@@ -37,8 +37,8 @@ const skills = () => {
         <div className={'h-40'}></div>
         <div className={'w-full lg:h-screen p-10 mt-20'}>
             <div className={'max-w-[1240px] flex flex-col justify-center h-full'}>
-                <h1 className={'tracking-widest uppercase text-[#D4AF37] text-center'}>Skills</h1>
-                <h2 className={'py-7'}>What I can do</h2>
+                <p className={'tracking-widest uppercase text-[#D4AF37] text-xl text-center font-bold'}>Skills</p>
+                <h2 className={'py-7 text-center'}>What I can do</h2>
                 <div className={'grid md:grid-cols-2 lg:grid-cols-5 gap-8'}>
                     <HTML />
                     <CSS />

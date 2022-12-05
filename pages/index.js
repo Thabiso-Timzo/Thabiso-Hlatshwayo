@@ -31,8 +31,8 @@ export default function Home() {
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
                 <p className={'py-4 text-gray-200 max-w-[70%] m-auto'}>
-                    I am a developer creating awesome and effective projects for companies. 
-                    start scrolling and learn more about me.
+                    I am a developer creating awesome and effective projects. 
+                    start going through all the pages and learn more about me.
                 </p>
                 <div className={'flex items-center justify-between max-w-[330px] m-auto py-4'}>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>

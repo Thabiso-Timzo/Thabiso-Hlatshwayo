@@ -61,8 +61,8 @@ const contact = () => {
     <div className={'h-20'}></div>
     <div className={'w-full lg:h-screen'}>
         <div className={'max-w-[1240px] m-auto '}>
-            <p className={'text-xl tracking-widest uppercase text-[#D4AF37] '}>Contact</p>
-            <h2 className={'py-4'}>Get In touch</h2>
+            <p className={'text-xl tracking-widest uppercase text-[#D4AF37 text-center] '}>Contact</p>
+            <h2 className={'py-4 text-center'}>Get In touch</h2>
             <div className={'grid lg:grid-cols-5 gap-8'}>
                 <div className={'col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'}>
                     <div className={'lg:p-4 h-full'}>

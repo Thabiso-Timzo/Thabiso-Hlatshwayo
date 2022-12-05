@@ -13,12 +13,12 @@ const about = () => {
         <link rel="icon" href="/logo.png" />
       </Head>
     <NavBar />
-    <div className={'h-15'}></div>
+    <div className={'h-20'}></div>
     <div className={'w-full md:h-screen p-10 flex items-center py-16'}>
       <div className={'max-w-[1240] m-auto md:grid grid-cols-3 gap-8'}>
         <div className={'col-span-2'}>
           <h1 className={'uppercase text-3xl tracking-widest text-[#D4AF37] text-center'}>About Thabiso Hlatshwayo</h1>
-          <h2 className={'py-4'}>Who I am</h2>
+          <h2 className={'py-4 text-center'}>Who I am</h2>
           <p className={'py-2 text-gray-100'}>
             I have spent the last 9 years coding, I have started coding since grade 11 by designing web pages 
             using technologies such as HTML and CSS. I have an eager to learn different types of technologies.
