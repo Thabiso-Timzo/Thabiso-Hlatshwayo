@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { toast } from 'react-toastify'
-import { useDispatch, useSelector } from 'react-redux'
 import { 
     AiFillLinkedin,
     AiFillInstagram,
@@ -13,42 +12,62 @@ import {
 import Footer from '../components/footer/Footer'
 import NavBar from '../components/nav-bar/NavBar'
 import touch from '../public/assets/touch.jpg'
-import { emailAction } from '../actions/emailAction'
 import { isEmpty, isEmail } from '../utils/validation/validation'
 import Loading from '../components/loading/Loading'
+import { sendEmail } from '../lib/api'
+
+const  initValues = {
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+}
+const initState = {values: initValues}
 
 const contact = () => {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [subject, setSubject] = useState('')
-    const [message, setMessage] = useState('')
+    const [state, setState] = useState(initState)
 
-    const dispatch = useDispatch()
-
-    const send = useSelector((state) => state.email)
-    const { error, success, loading } = send
+    const { values, isLoading, error } = state
 
     useEffect(() => {
         if (error) {
             toast.error(error)
-        }
+        }        
+    },[])
 
-        if (success) {
-            toast.success("Email sent!!")
+    const handleChange = ({target}) => setState((prev) => ({
+        ...prev,
+        values: {
+            ...prev.values,
+            [target.name]: target.value
         }
-    },[toast, error, success])
+    }))
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
-        if (isEmpty(name) || isEmpty(email) || isEmpty(subject) || isEmpty(message)) 
+        if (isEmpty(values.name) || isEmpty(values.email) || isEmpty(values.subject) || isEmpty(values.message)) 
             return toast.error('Please fill in all fields.')
 
-        if (!isEmail(email)) 
-            return toast.error('Invalid email address.')           
+        if (!isEmail(values.email)) 
+            return toast.error('Invalid email address.')
+            
+        setState((prev) => ({
+            ...prev,
+            isLoading
+        }))
 
-        dispatch(emailAction(name, email, subject, message))
-    }
+        try {
+            await sendEmail(values)
+            setState(initState)
+        } catch (error) {
+            setState({
+                ...prev,
+                isLoading: false,
+                error: error.message
+            })
+        }
+    }   
 
   return (
     <>
@@ -58,10 +77,10 @@ const contact = () => {
         <link rel="icon" href="/logo.png" />
     </Head>
     <NavBar />
-    <div className={'h-20'}></div>
+    <div className={'h-40'}></div>
     <div className={'w-full lg:h-screen'}>
         <div className={'max-w-[1240px] m-auto '}>
-            <p className={'text-xl tracking-widest uppercase text-[#D4AF37 text-center] '}>Contact</p>
+            <p className={'text-xl tracking-widest uppercase text-[#D4AF37] text-center font-bold'}>Contact</p>
             <h2 className={'py-4 text-center'}>Get In touch</h2>
             <div className={'grid lg:grid-cols-5 gap-8'}>
                 <div className={'col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'}>
@@ -90,69 +109,63 @@ const contact = () => {
                     </div> 
                 </div>
                 <div className={'col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'}>
-                    {
-                        loading ? (
-                            <div className={'flex items-center justify-center mt-40'}>
-                                <Loading />
+                    <div className={'p-4'}>
+                        <form>
+                            <div className={'grid md:grid-col-4 w-full py-2'}>
+                                <div className={'flex flex-col'}>
+                                    <label className={'uppercase text-sm py-2'}>Name*</label>
+                                    <input 
+                                        className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
+                                        type='text' 
+                                        placeholder='Enter your name'
+                                        name='name'
+                                        value={values.name}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className={'flex flex-col'}>
+                                    <label className={'uppercase text-sm py-2'}>Email*</label>
+                                    <input 
+                                        className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
+                                        type='text' 
+                                        placeholder='Enter your email'
+                                        name='email'
+                                        value={values.email}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className={'flex flex-col'}>
+                                    <label className={'uppercase text-sm py-2'}>Subject*</label>
+                                    <input 
+                                        className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
+                                        type='text' 
+                                        placeholder='Enter your subject'
+                                        name='subject'
+                                        value={values.subject}
+                                        onChange={handleChange}
+                                    />
+                                </div>
+                                <div className={'flex flex-col'}>
+                                    <label className={'uppercase text-sm py-2'}>Message*</label>
+                                    <textarea 
+                                        className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
+                                        type='text' 
+                                        placeholder='Message'
+                                        name='message'
+                                        value={values.message}
+                                        onChange={handleChange}
+                                    />
+                                </div>
                             </div>
-                        ) : (
-                            <div className={'p-4'}>
-                                <form>
-                                    <div className={'grid md:grid-col-4 w-full py-2'}>
-                                        <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Name*</label>
-                                            <input 
-                                                className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
-                                                type='text' 
-                                                placeholder='Enter your name'
-                                                name='name'
-                                                value={name}
-                                                onChange={(e) => setName(e.target.value)}
-                                            />
-                                        </div>
-                                        <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Email*</label>
-                                            <input 
-                                                className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
-                                                type='text' 
-                                                placeholder='Enter your email'
-                                                name='email'
-                                                value={email}
-                                                onChange={(e) => setEmail(e.target.value)}
-                                            />
-                                        </div>
-                                        <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Subject*</label>
-                                            <input 
-                                                className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
-                                                type='text' 
-                                                placeholder='Enter your subject'
-                                                name='subject'
-                                                value={subject}
-                                                onChange={(e) => setSubject(e.target.value)}
-                                            />
-                                        </div>
-                                        <div className={'flex flex-col'}>
-                                            <label className={'uppercase text-sm py-2'}>Message*</label>
-                                            <textarea 
-                                                className={'border-2 rounded-lg p-3 flex border-gray-300 text-[#000]'} 
-                                                type='text' 
-                                                placeholder='Message'
-                                                name='message'
-                                                value={message}
-                                                onChange={(e) => setMessage(e.target.value)}
-                                            />
-                                        </div>
-                                    </div>
-                                    <button 
-                                        onClick={handleSubmit} 
-                                        className={'mt-5 w-full p-4 text-gray-100'}
-                                        disabled={!name || !email || !subject || !message}
-                                     >Send message</button>
-                                </form>
-                            </div>
-                        )
-                    }
+                            <button 
+                                onClick={handleSubmit} 
+                                className={'mt-5 w-full p-4 text-gray-100'}
+                                disabled={!values.name || !values.email || !values.subject || !values.message}
+                            >
+                                {isLoading ? <Loading /> : <p>Send message</p>}
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
