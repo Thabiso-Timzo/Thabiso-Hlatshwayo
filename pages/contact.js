@@ -7,6 +7,7 @@ import {
     AiFillLinkedin,
     AiFillInstagram,
     AiFillGithub,
+    AiOutlineTwitter
 } from 'react-icons/ai'
 
 import Footer from '../components/footer/Footer'
@@ -94,6 +95,9 @@ const Contact = () => {
                             <div className={'flex justify-between pt-5 ease-in duration-300'}>
                                 <div className={'rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-75'}>
                                     <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><AiFillInstagram size={20} /></Link>
+                                </div>
+                                <div className={'rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-75'}>
+                                    <Link href={'https://twitter.com/thabiso_dev'}><AiOutlineTwitter size={20} /></Link>
                                 </div>
                                 <div className={'rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-75'}>
                                     <Link href={'https://www.linkedin.com/in/thabiso-hlatshwayo-8a4079198/'}><AiFillLinkedin size={20} /></Link>

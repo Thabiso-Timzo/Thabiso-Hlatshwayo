@@ -4,7 +4,8 @@ import {
     AiFillLinkedin,
     AiFillInstagram,
     AiFillGithub,
-    AiFillMail
+    AiFillMail,
+    AiOutlineTwitter
 } from 'react-icons/ai'
 
 import Footer from '../components/footer/Footer'
@@ -34,9 +35,12 @@ export default function Home() {
                     I am a developer creating awesome and effective projects. 
                     start going through all the pages and learn more about me.
                 </p>
-                <div className={'flex items-center justify-between max-w-[330px] m-auto py-4'}>
+                <div className={'flex items-center justify-between max-w-[400px] m-auto py-4'}>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>
                         <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><AiFillInstagram size={20} /></Link>
+                    </div>
+                    <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>
+                        <Link href={'https://twitter.com/thabiso_dev'}><AiOutlineTwitter size={20} /></Link>
                     </div>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>
                         <Link href={'https://www.linkedin.com/in/thabiso-hlatshwayo-8a4079198/'}><AiFillLinkedin size={20} /></Link>
