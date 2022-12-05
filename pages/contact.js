@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { toast } from 'react-toastify'
 import { 
     AiFillLinkedin,
@@ -22,18 +22,15 @@ const  initValues = {
     subject: '',
     message: ''
 }
-const initState = {values: initValues}
+const initState = {
+    values: initValues,
+    isLoading: false
+}
 
-const contact = () => {
-    const [state, setState] = useState(initState)
+const Contact = () => {
+    const [state, setState] = React.useState(initState)
 
-    const { values, isLoading, error } = state
-
-    useEffect(() => {
-        if (error) {
-            toast.error(error)
-        }        
-    },[])
+    const { values, isLoading } = state
 
     const handleChange = ({target}) => setState((prev) => ({
         ...prev,
@@ -162,7 +159,7 @@ const contact = () => {
                                 className={'mt-5 w-full p-4 text-gray-100'}
                                 disabled={!values.name || !values.email || !values.subject || !values.message}
                             >
-                                {isLoading ? <Loading /> : <p>Send message</p>}
+                                {isLoading === true? <Loading /> : <p>Send message</p>}
                             </button>
                         </form>
                     </div>
@@ -175,4 +172,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
