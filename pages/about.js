@@ -1,8 +1,10 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
-import Footer from '../components/footer/Footer'
 
 import NavBar from '../components/nav-bar/NavBar'
+import Footer from '../components/footer/Footer'
+import touch from '../public/assets/touch.jpg'
 
 const about = () => {
   return (
@@ -33,7 +35,13 @@ const about = () => {
           </p>
         </div>
         <div className={'w-full h-auto shadow-xl shadow-black rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'}>
-          <img className={'rounded-xl'} src="https://buildmypc.net/assets/images/builts/high-end-pc.jpg" alt="" />
+          <Image 
+            className={'rounded-xl'} 
+            src={touch} 
+            alt="" 
+            width={'320'} 
+            height={'320'} 
+          />
         </div>
       </div>
     </div>
