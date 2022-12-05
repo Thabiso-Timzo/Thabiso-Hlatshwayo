@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState} from 'react'
 import { IoIosArrowDropupCircle } from 'react-icons/io'
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   const [toTop, setToTop] = useState(false)
@@ -42,6 +42,7 @@ const Footer = () => {
             </p>
             <div className={'flex gap-6 pb-5'}>
               <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><FaInstagram className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
+              <Link href={'https://twitter.com/thabiso_dev'}><FaTwitter className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
               <Link href={'https://github.com/Thabiso-Timzo'}><FaGithub className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
               <Link href={'https://www.linkedin.com/in/thabiso-hlatshwayo-8a4079198/'}><FaLinkedin className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
             </div>
