@@ -25,7 +25,7 @@ import TypeScript from '../components/typescript/TypeScript'
 import Django from '../components/django/Django'
 import SQLAlchemy from '../components/sqlalchemy/SQLAlchemy'
 
-const skills = () => {
+const Skills = () => {
   return (
     <>
         <Head>
@@ -69,4 +69,4 @@ const skills = () => {
   )
 }
 
-export default skills
+export default Skills
