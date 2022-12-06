@@ -64,7 +64,7 @@ const Footer = () => {
               <Link href={'/projects'}>Projects</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/contacts'}>Contacts</Link>
+              <Link href={'/contact'}>Contacts</Link>
             </li>
           </ul>
         </div>
