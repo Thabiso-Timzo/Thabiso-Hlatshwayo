@@ -24,7 +24,7 @@ export default function Home() {
       <div className={'w-full h-screen text-center'}>
         <div className={'max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'}>
             <div className={''}>
-                <p className={'uppercase text-sm tracking-widest text-[#D4AF37]'}>Dreams and teams work together.</p>
+                <p className={'uppercase text-sm tracking-widest text-[#D4AF37]'}>Teams and dreams may coexist.</p>
                 <h1 className={'py-4 text-gray-300'}>
                     Hi, I am <span className={'text-[#D4AF37]'}>Thabiso Hlatshwayo</span>
                 </h1>
@@ -32,8 +32,11 @@ export default function Home() {
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
                 <p className={'py-4 text-gray-200 max-w-[70%] m-auto'}>
-                    I am a developer creating awesome and effective projects. 
-                    start going through all the pages and learn more about me.
+                    The capacity to cooperate with others in pursuit of a common goal is teamwork. 
+                    the capacity to align individual successes with organizational goals. 
+                    It is the fuel that enables regular individuals to achieve extraordinary results.
+                    I'm a developer making fantastic and successful projects. 
+                    Begin browsing all the pages to discover more about myself.
                 </p>
                 <div className={'flex items-center justify-between max-w-[400px] m-auto py-4'}>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>
