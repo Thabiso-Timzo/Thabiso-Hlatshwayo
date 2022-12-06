@@ -4,7 +4,7 @@ import Head from 'next/head'
 import NavBar from '../../../components/nav-bar/NavBar'
 import Footer from '../../../components/footer/Footer'
 
-const index = () => {
+const Index = () => {
   return (
     <>
         <Head>
@@ -22,4 +22,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
