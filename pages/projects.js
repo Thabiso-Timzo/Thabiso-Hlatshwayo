@@ -16,7 +16,7 @@ import gude from '../public/assets/projects/gude.png'
 import contact from '../public/assets/projects/phone.png'
 import fyur from '../public/assets/projects/fyur.png'
 import thabiso from '../public/assets/projects/thabiso.png'
-import movie from '../public/assets/projects/movie.jpg'
+import movie from '../public/assets/projects/movie.png'
 
 const Projects = () => {
   return (

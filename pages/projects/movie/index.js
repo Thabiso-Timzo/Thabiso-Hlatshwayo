@@ -34,10 +34,6 @@ const Index = () => {
               <h2 className={'text-[#fff] text-center'}>Movie App</h2>
               <div className={'mb-3 flex justify-center gap-4 mt-5'}>
                 <Image src={react} alt={''} width={'20'} height={'15'}/>
-                <Image src={redux} alt={''} width={'20'} height={'15'}/>
-                <Image src={mongo} alt={''} width={'15'} height={'15'}/>
-                <Image src={express} alt={''} width={'20'} height={'15'}/>
-                <Image src={node} alt={''} width={'20'} height={'15'}/>
               </div>
             </div>
           </div>
@@ -48,8 +44,7 @@ const Index = () => {
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
             <p className={'mt-2'}>
-              Users can view new movies with the entire plot on the MERN Stack website 
-              after registering. For this project, I used a movie API.
+              A simple movie app made developed with React.js and the Movie Database (TMDB) API.
             </p>
             <div className={'mt-10'}>
               <Link 
