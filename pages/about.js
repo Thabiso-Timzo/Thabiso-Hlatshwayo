@@ -6,7 +6,7 @@ import NavBar from '../components/nav-bar/NavBar'
 import Footer from '../components/footer/Footer'
 import touch from '../public/assets/touch.jpg'
 
-const about = () => {
+const About = () => {
   return (
     <>
     <Head>
@@ -22,16 +22,15 @@ const about = () => {
           <h1 className={'uppercase text-3xl tracking-widest text-[#D4AF37] text-center'}>About Thabiso Hlatshwayo</h1>
           <h2 className={'py-4 text-center'}>Who I am</h2>
           <p className={'py-2 text-gray-100'}>
-            I have spent the last 9 years coding, I have started coding since grade 11 by designing web pages 
-            using technologies such as HTML and CSS. I have an eager to learn different types of technologies.
-            I always had an interest for technology and working with computers. After high school I started learning 
-            my first ever programming (JavaScript) language. I integrate JavaScript into html for the first time
-            just after 6 months into tertiary. That is how my love for programming started. 
+            I've been coding for the past nine years. I got my start in grade 11 by utilizing HTML and CSS to create web pages. 
+            I'm enthusiastic to learn various technological systems. Working with computers and technology have always interested me. 
+            I started studying JavaScript, my first programming language, when I graduated from high school. After six months in tertiary, 
+            I integrate JavaScript into HTML for the first time. That's how my passion for programming got its start. 
           </p>
           <p className={'py-2 text-gray-100'}>
-            After tertiary I joined a bootcamp (HyperionDev) where i was taught how to build softwares using Java and Python.
-            I was fascinated with how programming can be I was quickly drawn to lean more. I did my internships at Addmore digital,
-            We used MERN Stack to build different types of projects.
+            I enrolled at a bootcamp (HyperionDev) after tertiary education to learn how to create software using Java and Python.
+            I was immediately drawn to learning more after being captivated by how programming could be. I completed my internships at Addmore Digital, 
+            where we built various projects using MERN Stack.
           </p>
         </div>
         <div className={'w-full h-auto shadow-xl shadow-black rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'}>
@@ -50,4 +49,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About
