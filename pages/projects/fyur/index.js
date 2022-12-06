@@ -14,7 +14,7 @@ import javascript from '../../../public/assets/skills/javascript.png'
 import sqlalchemy from '../../../public/assets/skills/sqlAlchemy.png'
 import postgreSQL from '../../../public/assets/skills/postgresql.png'
 
-const index = () => {
+const Index = () => {
   return (
     <div>
         <Head>
@@ -25,21 +25,21 @@ const index = () => {
         <NavBar />
         <div className={'w-full'}>
         <div className={'w-screen h-[25vh] lg:h-[40vh relative]'}>
-          <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/50 z-10'}>
+          <div className={'absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10'}>
             <div className={'absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'}>
               <Link href={'/projects'}>
-                <div className={'text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
+                <div className={'ml-5 mb-5 text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
                   <BsFillArrowLeftCircleFill />
                 </div>
               </Link>
               <h2 className={'text-[#fff] text-center'}>Fyur</h2>
-              <div className={'flex justify-center gap-4 mt-5'}>
-                <Image src={flask} alt={''} width={'30'} height={'15'}/>
-                <Image src={html} alt={''} width={'30'} height={'15'}/>
-                <Image src={javascript} alt={''} width={'30'} height={'15'}/>
-                <Image src={sqlalchemy} alt={''} width={'30'} height={'15'}/>
-                <Image src={postgreSQL} alt={''} width={'30'} height={'15'}/>
-                <Image src={css} alt={''} width={'30'} height={'15'}/>
+              <div className={'mb-3 flex justify-center gap-4 mt-5'}>
+                <Image src={flask} alt={''} width={'20'} height={'15'}/>
+                <Image src={html} alt={''} width={'20'} height={'15'}/>
+                <Image src={javascript} alt={''} width={'20'} height={'15'}/>
+                <Image src={sqlalchemy} alt={''} width={'20'} height={'15'}/>
+                <Image src={postgreSQL} alt={''} width={'20'} height={'15'}/>
+                <Image src={css} alt={''} width={'20'} height={'15'}/>
               </div>
             </div>
           </div>
@@ -50,9 +50,10 @@ const index = () => {
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
             <p className={'mt-2'}>
-              Fyyur is a musical venue and artist booking site that facilitates the discovery and bookings of 
-              shows between local performing artists and venues. This site lets you list new artists and venues, 
-              discover them, and list shows with artists as a venue owner. 
+              A website for booking musical venues and artists called Fyyur makes it 
+              easier for venues to find and book local performers for performances. 
+              This website enables venue owners to list concerts with artists, list 
+              new artists and venues, and discover new artists and venues. 
             </p>
             <div className={'mt-10'}>
               <Link 
@@ -70,4 +71,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

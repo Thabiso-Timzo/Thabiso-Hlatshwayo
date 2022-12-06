@@ -10,7 +10,7 @@ import NavBar from '../../../components/nav-bar/NavBar'
 import next from '../../../public/assets/skills/nextjs.png'
 import tailwind from '../../../public/assets/skills/tailwind-css.png'
 
-const index = () => {
+const Index = () => {
   return (
     <div>
         <Head>
@@ -21,17 +21,17 @@ const index = () => {
         <NavBar />
         <div className={'w-full'}>
         <div className={'w-screen h-[25vh] lg:h-[40vh relative]'}>
-          <div className={'absolute top-0 left-0 w-full h-[25vh] lg:h-[40vh] bg-black/50 z-10'}>
+          <div className={'absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10'}>
             <div className={'absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%]'}>
               <Link href={'/projects'}>
-                <div className={'text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
+                <div className={'ml-5 mb-5 text-2xl cursor-pointer w-3 h-3 rounded-full hover:text-[#D4AF37]'}>
                   <BsFillArrowLeftCircleFill />
                 </div>
               </Link>
               <h2 className={'text-[#fff] text-center'}>Thabiso</h2>
               <div className={'flex justify-center gap-4 mt-5'}>
-                <Image src={next} alt={''} width={'30'} height={'15'}/>
-                <Image src={tailwind} alt={''} width={'30'} height={'15'}/>
+                <Image src={next} alt={''} width={'20'} height={'15'}/>
+                <Image src={tailwind} alt={''} width={'20'} height={'15'}/>
               </div>
             </div>
           </div>
@@ -42,16 +42,24 @@ const index = () => {
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
             <p className={'mt-2'}>
-              I used Next.js and tailwind css to build this website. You can view all the documentationof the two 
-              API's I have build. I also build several projects. One can contact me using the email form on contact page
-
+              For the creation of this website, I used Next.js and Tailwind CSS. 
+              You may see the whole documentation for the two APIs I created. 
+              I also create a number of projects
             </p>
             <div className={'mt-10'}>
-              <Link 
+              <Link Link 
                 href={'https://github.com/Thabiso-Timzo/thabiso-hlatshwayo'}
                 className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
               >
                 Source Code
+              </Link>
+            </div>
+            <div className={'mt-10'}>
+              <Link Link 
+                href={'https://thabiso-hlatshwayo.vercel.app/'}
+                className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
+              >
+                View project
               </Link>
             </div>
           </div>
@@ -62,4 +70,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
