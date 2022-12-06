@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { toast } from 'react-toastify'
 import { 
     AiFillLinkedin,
@@ -29,7 +29,7 @@ const initState = {
 }
 
 const Contact = () => {
-    const [state, setState] = React.useState(initState)
+    const [state, setState] = useState(initState)
 
     const { values, isLoading } = state
 
@@ -88,7 +88,9 @@ const Contact = () => {
                         </div>
                         <div className="">
                             <h2 className={'py-2'}>Junior developer</h2>
-                            <p className={'py-4'}>Creating awaresome projects, while learning different types of technologies.</p>
+                            <p className={'py-4'}>
+                                Developing thoughtful initiatives while gaining knowledge of various technologies.
+                            </p>
                         </div>
                         <div>
                             <p className={'uppercase pt-8'}>Connect with me</p>
