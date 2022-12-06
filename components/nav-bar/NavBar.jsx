@@ -113,7 +113,7 @@ const NavBar = () => {
               </div>
               </div>
               <div className={'border-b border-grey-300 my-4'}>
-                <p className={'w-[85%] md:w-[90%] py-4'}>Dreams and teams work together.</p>
+                <p className={'w-[85%] md:w-[90%] py-4'}>Teams and dreams may coexist.</p>
               </div>
             </div>
             <div className={'py-4 flex flex-col'}>
@@ -136,7 +136,7 @@ const NavBar = () => {
               </ul> 
             </div>
             <div className={'pt-4'}>
-              <p className={'uppercase tracking-widest text-[#D4AF37]'}>Let's connect</p>
+              <p className={'uppercase tracking-widest text-[#D4AF37]'}>Let's talk.</p>
               <div className={'flex items-center justify-between my-4 w-full sm:w-[80%]'}>
                 <div className={'rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-75'}>
                   <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><AiFillInstagram size={20} /></Link>
