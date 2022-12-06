@@ -22,10 +22,11 @@ const About = () => {
           <h1 className={'uppercase text-3xl tracking-widest text-[#D4AF37] text-center'}>About Thabiso Hlatshwayo</h1>
           <h2 className={'py-4 text-center'}>Who I am</h2>
           <p className={'py-2 text-gray-100'}>
-            I've been coding for the past nine years. I got my start in grade 11 by utilizing HTML and CSS to create web pages. 
-            I'm enthusiastic to learn various technological systems. Working with computers and technology have always interested me. 
-            I started studying JavaScript, my first programming language, when I graduated from high school. After six months in tertiary, 
-            I integrate JavaScript into HTML for the first time. That's how my passion for programming got its start. 
+            For the last nine years, I've been coding. In grade 11, I started building websites using HTML and CSS. 
+            I'm eager to learn about various technology platforms. I've always been interested in technology and 
+            working with computers. After high school, I started learning JavaScript, which was my first programming 
+            language. I finally incorporate JavaScript into HTML after six months of tertiary education. 
+            That's how my enthusiasm for programming began.
           </p>
           <p className={'py-2 text-gray-100'}>
             I enrolled at a bootcamp (HyperionDev) after tertiary education to learn how to create software using Java and Python.
