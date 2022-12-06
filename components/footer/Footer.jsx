@@ -87,7 +87,7 @@ const Footer = () => {
               <Link href={'/projects/movie'}>Movie</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/projects/thabiso'}>Thabiso's profile</Link>
+              <Link href={'/projects/thabiso'}>Thabiso</Link>
             </li>
           </ul>
         </div>
