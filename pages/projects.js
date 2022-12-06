@@ -18,7 +18,7 @@ import fyur from '../public/assets/projects/fyur.png'
 import thabiso from '../public/assets/projects/thabiso.png'
 import movie from '../public/assets/projects/movie.jpg'
 
-const projects = () => {
+const Projects = () => {
   return (
     <>
       <Head>
@@ -47,4 +47,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default Projects
