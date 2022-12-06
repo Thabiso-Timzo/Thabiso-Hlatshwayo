@@ -43,11 +43,10 @@ const Index = () => {
           </div>
         </div>
         <div className={'h-10'}></div>
-        <div className={'max-w-[1240px mx-auto p-10 pt-20'}>
+        <div className={'max-w-[1240px] mx-auto p-10 pt-20'}>
           <div className={'col-span-4'}>
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
-            <h4 className={'mt-2'}>Project is on development mode.</h4>
             <p className={'mt-2'}>
               Users can view new movies with the entire plot on the MERN Stack website 
               after registering. For this project, I used a movie API.
@@ -58,6 +57,14 @@ const Index = () => {
                 className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
               >
                 Source Code
+              </Link>
+            </div>
+            <div className={'mt-10'}>
+              <Link 
+                href={'https://movie-assessment.vercel.app/'}
+                className={'px-6 py-3 text-blue-100 no-underline bg-blue-500 rounded hover:bg-blue-600 hover:underline hover:text-blue-200'}
+              >
+                View project
               </Link>
             </div>
           </div>
