@@ -76,7 +76,7 @@ const Contact = () => {
     </Head>
     <NavBar />
     <div className={'h-40'}></div>
-    <div className={'w-full lg:h-screen'}>
+    <div className={'w-full mb-40 lg:h-screen'}>
         <div className={'max-w-[1240px] m-auto '}>
             <p className={'text-xl tracking-widest uppercase text-[#D4AF37] text-center font-bold'}>Contact</p>
             <h2 className={'py-4 text-center'}>Get In touch</h2>
