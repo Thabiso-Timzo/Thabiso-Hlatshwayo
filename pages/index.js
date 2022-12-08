@@ -25,13 +25,13 @@ export default function Home() {
         <div className={'max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'}>
             <div className={''}>
                 <p className={'uppercase text-sm tracking-widest text-[#D4AF37]'}>Teams and dreams may coexist.</p>
-                <h1 className={'py-4 text-gray-300'}>
+                <h1 className={'py-4 text-white'}>
                     Hi, I am <span className={'text-[#D4AF37]'}>Thabiso Hlatshwayo</span>
                 </h1>
-                <h2 className={'py-4 text-gray-300'}>
+                <h2 className={'py-4 text-white'}>
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
-                <p className={'py-4 text-gray-200 max-w-[70%] m-auto'}>
+                <p className={'py-4 text-white max-w-[70%] m-auto'}>
                     The capacity to cooperate with others in pursuit of a common goal is teamwork. 
                     the capacity to align individual successes with organizational goals. 
                     It is the fuel that enables regular individuals to achieve extraordinary results.
