@@ -32,11 +32,10 @@ export default function Home() {
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
                 <p className={'py-4 text-white max-w-[70%] m-auto'}>
-                    The capacity to cooperate with others in pursuit of a common goal is teamwork. 
-                    the capacity to align individual successes with organizational goals. 
-                    It is the fuel that enables regular individuals to achieve extraordinary results.
-                    I'm a developer making fantastic and successful projects. 
-                    Begin browsing all the pages to discover more about myself.
+                    The ability to cooperate with others in pursuit of a commonplace intention is teamwork. 
+                    the capacity to align a person's successes with organizational goals. it's by far the fuel 
+                    that enables normal people to attain first-rate outcomes. I'm a developer making extraordinary 
+                    and a success tasks. begin surfing all of the pages to find out greater approximately myself.
                 </p>
                 <div className={'flex items-center justify-between max-w-[400px] m-auto py-4'}>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>
