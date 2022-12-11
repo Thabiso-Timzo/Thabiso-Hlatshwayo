@@ -95,7 +95,7 @@ const Footer = () => {
           <ul>
             <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>API Documentation</p>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/docs/gude'}>Gude API Documentation</Link>
+              <Link href={'/docs/express'}>Express API Documentation</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
               <Link href={'/docs/trivia'}>Trivia API Documentation</Link>
