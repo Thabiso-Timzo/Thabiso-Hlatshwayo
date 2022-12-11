@@ -25,9 +25,8 @@ const NavBar = () => {
     if (
       router.asPath === '/projects/contacts' || 
       router.asPath === '/projects/fyur' || 
-      router.asPath === '/projects/gude' || 
+      router.asPath === '/projects/express' || 
       router.asPath === '/projects/movie' || 
-      router.asPath === '/projects/smt' ||
       router.asPath === '/projects/thabiso' ||
       router.asPath === '/projects/trivia'
       ) {
