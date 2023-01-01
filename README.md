@@ -1,4 +1,4 @@
-This bootstrap is based on this project, please click me. :) [Web page link](https://thabiso-hlatshwayo.vercel.app/).
+This bootstrap is based on this project, please click me. :) [Website link](https://thabiso-hlatshwayo.vercel.app/).
 
 Below you will find some information on how to perform common tasks.
 
