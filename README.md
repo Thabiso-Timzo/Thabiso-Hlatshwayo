@@ -1,34 +1,235 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This bootstrap is based on this project, please click me. :) [Web page link](https://thabiso-hlatshwayo.vercel.app/).
 
-## Getting Started
+Below you will find some information on how to perform common tasks.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
+- [Introduction](#introduction)
+- [Folder Structure](#folder-structure)
+- [Available Scripts](#available-scripts)
+  - [npm run dev](#npm-run-dev)
+  - [npm run build](#npm-run-dev)
+  - [npm start](#npm-start)
+  - [npm run link](#npm-run-link)
+- [Supported browsers](#supported-browsers)
+- [Installing a Dependency](#installing-a-dependency) 
+
+## Introduction
+
+```
+this project its a simple website where I talk about myself. I show off all my skills, projects I have done and projects I am developing.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder Structure 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+thabiso-hlatshwayo
+  | -- components
+    | -- amazon
+      | -- Amazon.jsx   
+    | -- contact
+      | -- contact.jsx
+    | -- css
+      | -- CSS.jsx
+    | -- django
+      |-- Django.jsx
+    | -- docker
+      | -- Docker.jsx
+    | -- express
+      | -- Express.jsx
+    | -- flask
+      | -- Flask.jsx
+    | -- footer
+      | -- Footer.jsx
+    | -- fyur
+      | -- Fyur.jsx
+    | -- git
+      | -- Git.jsx
+    | -- github
+      | -- GitHub.jsx
+    | -- gude
+      | -- Gude.jsx
+    | -- html
+      | HTML.jsx
+    | -- javascript 
+      | -- JavaScript.jsx
+    | -- loading
+      | -- Loading.jsx
+    | -- mongo
+      | -- Mongo.jsx
+    | -- movie 
+      | -- Movie.jsx
+    | -- mysql 
+      | -- MySQL.jsx      
+    | -- nav-bar
+      | -- NavBar.jsx
+    | -- next
+      | -- NextJS.lsx
+    | -- node
+      | -- Node.jsx
+    | -- postgresql
+      | -- PostgreSQL.jsx
+    | -- python
+      | -- Python.jsx
+    | -- react
+      | -- React.jsx
+    | -- redux
+      | -- Redux.jsx
+    | -- sqlalchemy
+      | -- SqlAlchemy.jsx
+    | -- tailwind
+      | -- Tailwind.jsx
+    | -- thabiso
+      | -- Thabiso.jsx
+    | -- trivia
+      | -- Trivia.jsx
+    | -- typescript
+      | -- TypeScript.jsx
+  | -- config
+    | -- nodemailer.jsx
+  | -- lib
+    | -- api.js
+  | -- pages
+    | -- api
+      | -- contact.js
+    | -- docs
+      | -- express
+        | -- index.js
+      | -- trivia 
+        | -- index.js
+    | -- projects
+      | -- contacts
+        | -- index
+      | -- express
+        | -- index.js
+      | -- fyur 
+        | --- index.js
+      | -- movie
+        | -- index.js
+      | -- thabiso
+        | -- index.js
+      | -- trivia
+        | -- index.js
+    | -- _app.js
+    | -- 404.js
+    | -- about.js
+    | -- contact.js
+    | -- index.js
+    | -- projects.js
+    | -- skills.js
+  | -- public
+    | -- assets
+      | -- logo
+      | -- projects
+      | -- skills
+  | -- styles
+    | -- globals.css
+    | -- Home.module.css
+  | -- utils         
+    | -- validation
+      | -- validation.js
+  | -- eslintrc.json
+  | -- .gitignore
+  | -- next.config.js
+  | -- package-lock.json
+  | -- package.json
+  | -- postcss.config.js
+  | -- README.md
+  | -- tailwind.config.js
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Installing the project
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Make sure you have nodejs installed in your machine. Run this command `npx create-next-app <project-name>` in your terminal.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+In the project directory, you can run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `npm run dev`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Deploy on Vercel
+### `npm run build`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Builds the app for production to the `build` folder.<br>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `npm start`
+
+Runs a production `build` folder
+
+### `npm run link`
+
+It helps prevent bugs and allow us to write much more readable code
+
+
+## Supported browsers
+
+NextJS is supported by modern Browsers, this project can either be ran on the below broswers
+
+`Chrome 64+`
+`Edge 79+`
+`Firefox 67+`
+`Opera 51+`
+`Safari 12+`
+
+## Installing a Dependency
+
+The generated project includes React, React-Dom and Next as dependencies. It also includes a set of scripts used by Create Next App as a development dependency. You may install other dependencies with `npm` or `yarn`:
+
+You can run the following command to install all the dependencies
+
+`npm install` or if you chose yarn then delete the package-lock.json file and run `yarn install`
+
+or 
+
+run the following commands to install each package
+
+For nodemailer run:
+
+```sh
+npm install --save nodemailer
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add nodemailer
+```
+
+For react-icons run:
+
+```sh
+npm install --save react-icons
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add react-icons
+```
+
+For react-spinners run:
+
+```sh
+npm install --save react-spinners
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add react-spinners
+```
+
+For react-toastify run:
+
+```sh
+npm install --save react-toastify
+```
+
+Alternatively you may use `yarn`:
+
+```sh
+yarn add react-toastify
+```
