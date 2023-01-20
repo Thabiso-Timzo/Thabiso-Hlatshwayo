@@ -24,6 +24,7 @@ import Footer from '../components/footer/Footer'
 import TypeScript from '../components/typescript/TypeScript'
 import Django from '../components/django/Django'
 import SQLAlchemy from '../components/sqlalchemy/SQLAlchemy'
+import Vue from '../components/vue/Vue'
 
 const Skills = () => {
   return (
@@ -47,6 +48,7 @@ const Skills = () => {
                     <Git />
                     <GitHub />
                     <ReactJS />
+                    <Vue />
                     <NextJS />
                     <Redux />
                     <Python />
