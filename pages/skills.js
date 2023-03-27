@@ -52,9 +52,9 @@ const Skills = () => {
                     <NextJS />
                     <Redux />
                     <Python />
-                    <Flask />
+                    {/* <Flask />
                     <Django />
-                    <SQLAlchemy />
+                    <SQLAlchemy /> */}
                     <NodeJSX />
                     <ExpressJS />
                     <Mongo />
