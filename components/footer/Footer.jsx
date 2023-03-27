@@ -91,7 +91,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className={'p-5'}>
+        {/* <div className={'p-5'}>
           <ul>
             <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>API Documentation</p>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
@@ -101,7 +101,7 @@ const Footer = () => {
               <Link href={'/docs/trivia'}>Trivia API Documentation</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className={'flex flex-col justify-center items-center text-center p-5 bg-slate-800'}>
         <p className={'font-bold'}>Copyright © {new Date().getFullYear()} Thabiso Hlatshwayo</p> 
