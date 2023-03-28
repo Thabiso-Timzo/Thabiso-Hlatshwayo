@@ -5,18 +5,18 @@ import Footer from '../components/footer/Footer'
 import NavBar from '../components/nav-bar/NavBar'
 
 import Gude from '../components/gude/Gude'
-import Trivia from '../components/trivia/Trivia'
-import Contact from '../components/contact/Contact'
+//import Trivia from '../components/trivia/Trivia'
+//import Contact from '../components/contact/Contact'
 import Fyur from '../components/fyur/Fyur'
 import Thabiso from '../components/thabiso/Thabiso'
-import Movie from '../components/movie/Movie'
+//import Movie from '../components/movie/Movie'
 
-import trivia from '../public/assets/projects/trivia.png'
+// import trivia from '../public/assets/projects/trivia.png'
 import gude from '../public/assets/projects/gude.png'
-import contact from '../public/assets/projects/phone.png'
+//import contact from '../public/assets/projects/phone.png'
 import fyur from '../public/assets/projects/fyur.png'
 import thabiso from '../public/assets/projects/thabiso.png'
-import movie from '../public/assets/projects/movie.png'
+//import movie from '../public/assets/projects/movie.png'
 
 const Projects = () => {
   return (
@@ -34,11 +34,11 @@ const Projects = () => {
             <h2 className={'py-4 text-center'}>What I have built</h2>
             <div className={'grid md:grid-cols-2 gap-8'}>
                 <Gude title="Express" backgroundImg={gude} projectURL={'/projects/express'}/>
-                <Trivia title="Trivia" backgroundImg={trivia} projectURL={'/projects/trivia'}/>
-                <Contact title="Contact" backgroundImg={contact} projectURL={'/projects/contacts'}/>
+                {/* <Trivia title="Trivia" backgroundImg={trivia} projectURL={'/projects/trivia'}/> */}
+                {/* <Contact title="Contact" backgroundImg={contact} projectURL={'/projects/contacts'}/> */}
                 <Fyur title="Fyer" backgroundImg={fyur} projectURL={'/projects/fyur'}/>
                 <Thabiso title="thabiso" backgroundImg={thabiso} projectURL={'/projects/thabiso'}/>
-                <Movie title="Movie app" backgroundImg={movie} projectURL={'/projects/movie'}/>
+                {/* <Movie title="Movie app" backgroundImg={movie} projectURL={'/projects/movie'}/> */}
             </div>
         </div>
     </div>
