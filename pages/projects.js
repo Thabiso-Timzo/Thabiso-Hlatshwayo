@@ -10,13 +10,14 @@ import Gude from '../components/gude/Gude'
 import Fyur from '../components/fyur/Fyur'
 import Thabiso from '../components/thabiso/Thabiso'
 //import Movie from '../components/movie/Movie'
+import Calculator from '../components/calculator/Calculator'
 
 // import trivia from '../public/assets/projects/trivia.png'
 import gude from '../public/assets/projects/gude.png'
 //import contact from '../public/assets/projects/phone.png'
 import fyur from '../public/assets/projects/fyur.png'
 import thabiso from '../public/assets/projects/thabiso.png'
-//import movie from '../public/assets/projects/movie.png'
+import calculator from '../public/assets/projects/calculator.png'
 
 const Projects = () => {
   return (
@@ -38,7 +39,7 @@ const Projects = () => {
                 {/* <Contact title="Contact" backgroundImg={contact} projectURL={'/projects/contacts'}/> */}
                 <Fyur title="Fyer" backgroundImg={fyur} projectURL={'/projects/fyur'}/>
                 <Thabiso title="thabiso" backgroundImg={thabiso} projectURL={'/projects/thabiso'}/>
-                {/* <Movie title="Movie app" backgroundImg={movie} projectURL={'/projects/movie'}/> */}
+                <Calculator title="calculator" backgroundImg={calculator} projectURL={'/projects/calculator'}/>
             </div>
         </div>
     </div>
