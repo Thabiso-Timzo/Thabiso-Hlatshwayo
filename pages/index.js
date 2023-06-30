@@ -32,10 +32,11 @@ export default function Home() {
                     A Full-Stack, Front-end, Back-end Developer 
                 </h2>
                 <p className={'py-4 text-white max-w-[70%] m-auto'}>
-                    The ability to cooperate with others in pursuit of a commonplace intention is teamwork. 
-                    the capacity to align a person's successes with organizational goals. it's by far the fuel 
-                    that enables normal people to attain first-rate outcomes. I'm a developer making extraordinary 
-                    and a success tasks. begin surfing all of the pages to find out greater approximately myself.
+                    Teamwork is the ability to collaborate with others to achieve a common goal. 
+                    The ability to align a person's successes with organizational goals. 
+                    It is by far the most effective fuel for ordinary people to achieve extraordinary 
+                    results. I am a developer with exceptional and successful projects. Begin by 
+                    browsing through all of the pages to learn more about myself.
                 </p>
                 <div className={'flex items-center justify-between max-w-[400px] m-auto py-4'}>
                     <div className={'rounded-full shadow-lg shadow-gray-700 p-6 cursor-pointer hover:scale-110 ease-in duration-75'}>

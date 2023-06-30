@@ -22,16 +22,20 @@ const About = () => {
           <h1 className={'uppercase text-3xl tracking-widest text-[#D4AF37] text-center'}>About Thabiso Hlatshwayo</h1>
           <h2 className={'py-4 text-center'}>Who I am</h2>
           <p className={'py-2 text-gray-100'}>
-            For the last nine years, I've been coding. In grade 11, I started building websites using HTML and CSS. 
-            I'm eager to learn about various technology platforms. I've always been interested in technology and 
-            working with computers. After high school, I started learning JavaScript, which was my first programming 
-            language. I finally incorporate JavaScript into HTML after six months of tertiary education. 
-            That's how my enthusiasm for programming began.
+            I have been coding for the past nine years. 
+            In 11th grade, I began creating websites with HTML and CSS. 
+            I am excited to learn about different technology platforms. 
+            I have always had a fascination with technology and working with computers. 
+            After high school, I began studying JavaScript, my first programming language. 
+            After six months of tertiary education, I finally incorporate JavaScript into HTML. 
+            That is where my interest in programming began.
           </p>
           <p className={'py-2 text-gray-100'}>
-            I enrolled at a bootcamp (HyperionDev) after tertiary education to learn how to create software using Java and Python.
-            I was immediately drawn to learning more after being captivated by how programming could be. I completed my internships at Addmore Digital, 
-            where we built various projects using MERN Stack.
+            Following tertiary education, I enrolled in a bootcamp (HyperionDev) to 
+            learn how to create software in Java and Python. After being captivated 
+            by how powerful programming could be, I was immediately drawn to learning more.
+            I finished my internships at Addmore Digital, where we worked on a variety of 
+            projects using MERN Stack.
           </p>
         </div>
         <div className={'w-full h-auto shadow-xl shadow-black rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'}>
