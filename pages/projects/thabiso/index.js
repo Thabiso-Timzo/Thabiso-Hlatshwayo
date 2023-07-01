@@ -42,9 +42,7 @@ const Index = () => {
             <p>Project</p>
             <h3 className={'mt-2'}>Overview</h3>
             <p className={'mt-2'}>
-              For the creation of this website, I used Next.js and Tailwind CSS. 
-              You may see the whole documentation for the two APIs I created. 
-              I also create a number of projects
+              A personal website
             </p>
             <div className={'mt-10'}>
               <Link Link 
