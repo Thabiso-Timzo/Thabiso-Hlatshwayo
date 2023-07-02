@@ -34,7 +34,7 @@ const Projects = () => {
             <p className={'text-xl tracking-widest uppercase text-[#D4AF37] text-center font-bold'}>Projects</p>
             <h2 className={'py-4 text-center'}>What I have built</h2>
             <div className={'grid md:grid-cols-2 gap-8'}>
-                <Gude title="Express" backgroundImg={gude} projectURL={'/projects/express'}/>
+                {/* <Gude title="Express" backgroundImg={gude} projectURL={'/projects/express'}/> */}
                 <ExpressStoreAPI title="Express-store-api" backgroundImg={api} projectURL={'/projects/express-api'}/>
                 {/* <Contact title="Contact" backgroundImg={contact} projectURL={'/projects/contacts'}/> */}
                 <Fyur title="Fyer" backgroundImg={fyur} projectURL={'/projects/fyur'}/>
