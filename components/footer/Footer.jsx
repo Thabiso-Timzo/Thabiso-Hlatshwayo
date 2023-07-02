@@ -43,7 +43,7 @@ const Footer = () => {
             <div className={'flex gap-6 pb-5'}>
               <Link href={'https://www.instagram.com/thabiso.timzo.dev/'}><FaInstagram className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
               <Link href={'https://twitter.com/thabiso_dev'}><FaTwitter className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
-              <Link href={'https://github.com/Thabiso-Timzo'}><FaGithub className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
+              <Link href={'https://github.com/Thabiso-007'}><FaGithub className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
               <Link href={'https://www.linkedin.com/in/thabiso-hlatshwayo-8a4079198/'}><FaLinkedin className={'text-2xl cursor-pointer hover:text-[#D4AF37]'} /></Link>
             </div>
           </ul>      
@@ -72,19 +72,13 @@ const Footer = () => {
           <ul>
             <p className={'text-[#D4AF37] font-bold text-2xl pb-4'}>Project links</p>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/projects/gude'}>Gude</Link>
+              <Link href={'/projects/gude'}>Express store</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/projects/trivia'}>Trivia</Link>
-            </li>
-            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/projects/contacts'}>Contacts</Link>
+              <Link href={'/projects/calculator'}>Calculator</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
               <Link href={'/projects/fyur'}>Fyur</Link>
-            </li>
-            <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
-              <Link href={'/projects/movie'}>Movie</Link>
             </li>
             <li className={'text-grey-500 text-md pb-2 text-semibold hover:text-[#D4AF37] cursor-pointer'}>
               <Link href={'/projects/thabiso'}>Thabiso</Link>
